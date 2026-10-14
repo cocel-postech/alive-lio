@@ -1,0 +1,18 @@
+<launch>
+    <!-- Launch file for velodyne16 VLP-16 LiDAR -->
+
+    <arg name="rviz" default="true"/>
+    <arg name="debug" default="false"/>
+
+    <rosparam command="load" file="$(find alive_lio)/config/fusion_portable_v2/ouster_alive.yaml"/>
+
+    <group if="$(eval arg('debug') == False)">
+        <node pkg="alive_lio" type="alive_lio_node" name="alive_lio_node" output="screen"/>
+    </group>
+
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz"
+              args="-d $(find alive_lio)/config/rviz_cfg/voxel_mapping.rviz"/>
+    </group>
+
+</launch>

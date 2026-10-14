@@ -1,0 +1,19 @@
+build
+Log/*.png
+Log/*.txt
+Log/*.csv
+Log/*.pdf
+.vscode/c_cpp_properties.json
+.vscode/settings.json
+PCD/*.pcd
+.gitbak
+.idea
+cmake-build-debug
+scripts
+
+# ONNX Runtime prebuilt library (large, fetched separately)
+onnx/onnxruntime-linux-x64-gpu-1.18.0/
+# local demo recording scripts
+demo/
+doc/
+src/.vscode/
