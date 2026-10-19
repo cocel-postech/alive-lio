@@ -59,7 +59,7 @@ Clone the repository and catkin_make:
 
 ## Dataset
 
-We release two sequences recorded at [Seosan Tunnel](https://www.google.com/maps?q=36.0420409,129.3612293) (36.0420409, 129.3612293) in Pohang-si, Gyeongsangbuk-do, South Korea.
+We release two sequences recorded at [Seosan Tunnel](https://www.google.com/maps?q=36.0420409,129.3612293) (36.0420409, 129.3612293) in Pohang-si, Gyeongsangbuk-do, South Korea. The platform specification is available in the [CoCEL Handheld Dataset](https://github.com/SanghyunPark01/CoCEL_Handheld-Dataset) repository.
 
 Both sequences start at one end of the tunnel, travel to the other end, and come back to the starting position. They were recorded with a Livox Avia moving sideways while mostly facing the tunnel wall. Since each sequence starts and ends at the same position, the end-to-end error can be used as a drift measure. *\*\*Note that no ground-truth trajectory is provided.\*\**
 
